@@ -1,11 +1,13 @@
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart';
 
-class SplashScreen extends StatelessWidget {
-  const SplashScreen({super.key});
+class SplashProvider with ChangeNotifier, DiagnosticableTreeMixin {
+  SplashProvider() {
+    print('init');
+    _init();
+  }
 
-  @override
-  Widget build(BuildContext context) {
+  void _init() {
     FirebaseAuth.instance.authStateChanges().listen((User? user) {
       if (user == null) {
         print('User is currently signed out!');
@@ -13,10 +15,5 @@ class SplashScreen extends StatelessWidget {
         print('User is signed in!');
       }
     });
-    return Scaffold(
-      body: Center(
-        child: Text('Splash'),
-      ),
-    );
   }
 }
