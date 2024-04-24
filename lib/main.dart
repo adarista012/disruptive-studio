@@ -1,7 +1,9 @@
 import 'package:disruptive_studio/app/app.dart';
-import 'package:disruptive_studio/app/ui/providers/splash.dart';
+import 'package:disruptive_studio/app/ui/global_providers/session_provider.dart';
+import 'package:disruptive_studio/app/ui/pages/login/login_provider.dart';
+import 'package:disruptive_studio/app/ui/pages/register/register.provider.dart';
+import 'package:disruptive_studio/app/ui/pages/splash/splash_provider.dart';
 import 'package:disruptive_studio/app/utils/inject_dependencies.dart';
-import 'package:disruptive_studio/app/utils/providers.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:provider/provider.dart';
@@ -16,7 +18,12 @@ void main() async {
   runApp(
     MultiProvider(
       providers: [
-        ChangeNotifierProvider(create: (_) => SplashProvider()),
+        ChangeNotifierProvider(create: (_) => SessionProvider()),
+        ChangeNotifierProvider(
+            create: (_) => SplashProvider(SessionProvider())),
+        ChangeNotifierProvider(create: (_) => LoginProvider(SessionProvider())),
+        ChangeNotifierProvider(
+            create: (_) => RegisterProvider(SessionProvider())),
       ],
       child: const MyApp(),
     ),

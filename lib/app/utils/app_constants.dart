@@ -14,4 +14,11 @@ class AppConstants {
   static const String internalError = 'internal-error';
   static const String weakPassword = 'weak-password';
   static const String nameOfApp = 'Disruptive Studio';
+  static const String alreadyHaveAnAccount = 'Already have an account';
+  static const String login = 'Login';
+  static const String register = 'Register';
+  static const String dontHaveAnAccount = 'Do not have an account';
+  static const String authEmail = 'email@disruptive.com';
+  static const String authPassword = 'password';
+  static const String authRepeatPassword = 'repeat password';
 }

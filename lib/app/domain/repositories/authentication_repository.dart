@@ -1,5 +1,6 @@
 import 'package:disruptive_studio/app/domain/responses/reset_password_response.dart';
 import 'package:disruptive_studio/app/domain/responses/sigin_response.dart';
+import 'package:disruptive_studio/app/domain/responses/signup_responses.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 abstract class AuthenticationRepository {
@@ -12,4 +13,6 @@ abstract class AuthenticationRepository {
   );
 
   Future<ResetPasswordResponse> sendResetPasswordLink(String email);
+
+  Future<SignupResponse> register(String email, password);
 }
