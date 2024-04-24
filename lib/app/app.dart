@@ -1,4 +1,5 @@
-import 'package:disruptive_studio/app/ui/pages/splash.dart';
+import 'package:disruptive_studio/app/routes/app_routes.dart';
+import 'package:disruptive_studio/app/routes/routes.dart';
 import 'package:disruptive_studio/app/utils/app_constants.dart';
 import 'package:flutter/material.dart';
 
@@ -14,7 +15,8 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const SplashPage(),
+      routes: appRoutes,
+      initialRoute: Routes.SPLASH,
     );
   }
 }

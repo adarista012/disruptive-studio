@@ -1,5 +1,4 @@
 import 'package:disruptive_studio/app/domain/repositories/authentication_repository.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart';
 import 'package:get/instance_manager.dart';
 

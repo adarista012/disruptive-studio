@@ -1,6 +1,7 @@
 import 'package:disruptive_studio/app/app.dart';
 import 'package:disruptive_studio/app/ui/providers/splash.dart';
 import 'package:disruptive_studio/app/utils/inject_dependencies.dart';
+import 'package:disruptive_studio/app/utils/providers.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:provider/provider.dart';
