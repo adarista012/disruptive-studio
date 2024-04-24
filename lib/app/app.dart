@@ -1,4 +1,5 @@
 import 'package:disruptive_studio/app/ui/pages/splash.dart';
+import 'package:disruptive_studio/app/utils/app_constants.dart';
 import 'package:flutter/material.dart';
 
 class MyApp extends StatelessWidget {
@@ -7,7 +8,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Disruptive Studio',
+      title: AppConstants.nameOfApp,
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
