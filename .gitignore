@@ -43,6 +43,6 @@ app.*.map.json
 /android/app/release
 /android/app/google-services.json
 
-
-pubspec.yaml
+#firebase options
+/lib/firebase_options.dart
 firebase.json
