@@ -1,5 +1,6 @@
 import 'package:disruptive_studio/app/app.dart';
 import 'package:disruptive_studio/app/ui/global_providers/session_provider.dart';
+import 'package:disruptive_studio/app/ui/pages/home/home_provider.dart';
 import 'package:disruptive_studio/app/ui/pages/login/login_provider.dart';
 import 'package:disruptive_studio/app/ui/pages/register/register.provider.dart';
 import 'package:disruptive_studio/app/ui/pages/splash/splash_provider.dart';
@@ -24,6 +25,7 @@ void main() async {
         ChangeNotifierProvider(create: (_) => LoginProvider(SessionProvider())),
         ChangeNotifierProvider(
             create: (_) => RegisterProvider(SessionProvider())),
+        ChangeNotifierProvider(create: (_) => HomeProvider()),
       ],
       child: const MyApp(),
     ),

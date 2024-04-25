@@ -29,7 +29,6 @@ class AuthenticationRepositoryImpl extends AuthenticationRepository {
 
   @override
   Future<ResetPasswordResponse> sendResetPasswordLink(String email) async {
-    // // TODO: implement sendResetPasswordLink
     return ResetPasswordResponse.userNotFound;
   }
 

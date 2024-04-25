@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       title: AppConstants.nameOfApp,
       debugShowCheckedModeBanner: false,
       navigatorKey: Get.key,

@@ -1,4 +1,5 @@
 import 'package:disruptive_studio/app/routes/routes.dart';
+import 'package:disruptive_studio/app/ui/pages/coin_detail/coin_detail_page.dart';
 import 'package:disruptive_studio/app/ui/pages/home/home_page.dart';
 import 'package:disruptive_studio/app/ui/pages/login/login_page.dart';
 import 'package:disruptive_studio/app/ui/pages/register/register_page.dart';
@@ -11,5 +12,6 @@ Map<String, Widget Function(BuildContext)> get appRoutes {
     Routes.HOME: (_) => const HomePage(),
     Routes.REGISTER: (_) => const RegisterPage(),
     Routes.LOGIN: (_) => const LoginPage(),
+    Routes.COIN_DETAIL: (_) => const CoinDetailPage(),
   };
 }
