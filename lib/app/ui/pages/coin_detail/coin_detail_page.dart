@@ -9,12 +9,12 @@ class CoinDetailPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetBuilder(
       init: CoinDetailProvider(),
-      builder: (GetxController controller) {
+      builder: (controller) {
         return Scaffold(
           appBar: AppBar(
             title: Text(Get.arguments[1].toString()),
           ),
-          body: const Text('data'),
+          body: Text(controller.list.toString()),
         );
       },
     );

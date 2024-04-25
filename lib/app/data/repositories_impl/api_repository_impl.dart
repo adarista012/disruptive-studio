@@ -28,4 +28,16 @@ class ApiRepositoryImpl extends ApiRepository {
       }
     }
   }
+
+  @override
+  Stream<List> getKline(String symbol) async* {
+    final response = await dio.get(
+        'https://www.binance.com/api/v3/klines?symbol=$symbol&interval=1m');
+    if (response.statusCode == 200) {
+      final List listResponse = response.data;
+      for (final e in listResponse) {
+        yield e;
+      }
+    }
+  }
 }

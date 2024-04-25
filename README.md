@@ -15,3 +15,6 @@ flutter clean
 flutter pub get
 flutter run
 ```
+
+![plot](assets/img-1.png)
+![plot](assets/img-2.png)
