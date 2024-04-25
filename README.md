@@ -1,5 +1,17 @@
-# Disruptive Studio
+# Disruptive Studio.
 
 A Flutter project for the role Flutter Developer in Disruptive Studio
 
-## Getting Started
+## About this project.
+
+- To use Firebase Authentication.
+- To use Provider.
+- To use Get for router.
+
+## how to run the project.
+
+```shell
+flutter clean
+flutter pub get
+flutter run
+```
